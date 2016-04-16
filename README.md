@@ -1,0 +1,2 @@
+# hologger
+Holistic logger library
