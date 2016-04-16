@@ -1,0 +1,28 @@
+{
+  "name": "hologger",
+  "version": "0.0.1",
+  "description": "Holistic logging library for NodeJS",
+  "main": "index.js",
+  "author": "Fernando Diaz <peke_buda@hotmail.com>",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "log"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "handlebars": "^4.0.5",
+    "le_node": "^1.3.0",
+    "lodash": "^4.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/datary/hologger"
+  },
+  "bugs": {
+    "url": "https://github.com/datary/hologger"
+  }
+}
