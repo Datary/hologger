@@ -21,7 +21,6 @@ var Logentries      = require('le_node')
 ,   _               = require('lodash')
 ,   handlebars      = require('handlebars')
 ,   siftRequest     = require("../../lib/dy-utils").siftRequest
-,   ERROR_CODES     = require("../../errors")
 ;
 
 
@@ -43,7 +42,7 @@ try {
     CONFIG.withStack= true;
     const LOGENTRIES_CLIENT = new Logentries(CONFIG);
     console.log("Yeah! Logentries instantation succeded!");
-    LOGENTRIES_CLIENT.on("error", (e) => LOGENTRIES_CLIENT.critical("[XXXXXXXX] [Unsuccessfully {{connect}} to {{Logentries}}", e));
+    LOGENTRIES_CLIENT.on("error", (e) => LOGENTRIES_CLIENT.critical("[XXXXXXXX] [Unsuccessfully connect to Logentries", e));
 } catch (e) {
     console.log("Ouch! Logentries instantation failed!");
 }
