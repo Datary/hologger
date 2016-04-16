@@ -20,7 +20,7 @@ var Logentries      = require('le_node')
 ,   chalk           = require('chalk')
 ,   _               = require('lodash')
 ,   handlebars      = require('handlebars')
-,   siftRequest     = require("../../lib/dy-utils").siftRequest
+,   siftRequest     = require("./lib/sift-request")
 ;
 
 
