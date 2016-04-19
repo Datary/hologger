@@ -25,7 +25,7 @@ var Logentries      = require('le_node')
 
 
 
-const LOCAL_OUTPUT_ONLY = !process.env.LOGENTRIES_TOKEN && process.env.RACK_ENV !== "staging" && process.env.RACK_ENV !== "production";
+const LOCAL_OUTPUT_ONLY = !process.env.LOGENTRIES_TOKEN;
 try {
     const CONFIG = {};
     CONFIG.token= process.env.LOGENTRIES_TOKEN;
