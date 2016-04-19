@@ -224,7 +224,7 @@ function genuineLogger(level, lib, libraryId){
             info.code = eventCode;
             info.fullCode = FULL_CODE;
             info.eventSlug = SLUG;
-            if (info && info.error) info.response = ERROR_CODES[info.error];
+            //if (info && info.error) info.response = ERROR_CODES[info.error];
             LOGENTRIES_CLIENT[level](info);
         }
     }
