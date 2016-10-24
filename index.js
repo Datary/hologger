@@ -9,12 +9,6 @@
  * notice;       // 3xxxxxxx
  * info;         // 2xxxxxxx
  * debug;        // 1xxxxxxx
- * 
- * @TODO logger deberia permitir indistintamente su invocacion de tres formas:
- * logger(3, {})            => la mas completa
- * logger("some message")   => para mensajes sobre la marcha
- * logger({})               => igualmente sobre la marcha, pero con info estructurada
- * logger(Error)            => logueo de errores  
  ***************************************************************************/
 var Logentries      = require('le_node')
 ,   chalk           = require('chalk')
