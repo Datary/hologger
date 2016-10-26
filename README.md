@@ -26,13 +26,21 @@ $ npm install hologger
 
 
 
-## TODO 
+## Use 
 
-La libreria deberia permitir indistintamente su invocacion de tres formas:
+La libreria permite su invocacion de cuatro formas indistintamente:
 + `hologger(3, {foo: "bar"})`             => la mas completa
 + `hologger("some custom message")`       => para mensajes sobre la marcha
 + `hologger({foo: "bar"})`                => igualmente sobre la marcha, pero con info estructurada
 + `hologger(Error)`                       => logueo de errores  
+
+
+
+## TODO
++ Implementar invocacion mediante Object.
++ Implementar invocacion mediante Error.
++ Implementar invocacion mediante String. 
++ Agregar metodo `useLibrary` para configurar la libreria de codigos a usar (breaking)
 
 @vid https://github.com/tj/log.js/blob/master/Readme.md  
 @vid https://github.com/nomiddlename/log4js-node
