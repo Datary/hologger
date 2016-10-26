@@ -16,9 +16,13 @@ var fakeLogger      = require("./lib/fake")
 
 
 
-const LOCAL_OUTPUT_ONLY = !process.env.LOGENTRIES_TOKEN;
+const LOCAL_OUTPUT_ONLY = !process.env.LOGENTRIES_TOKEN && !process.env.APPLICATIONINSIGHTS_INSTRUMENTATIONKEY;
 if (LOCAL_OUTPUT_ONLY) {
-    module.exports = function(lib, libraryId){ 
+    module.exports = function(lib, libraryId){
+        //@TODO sanity checks
+        libraryId = libraryId || 666;
+        lib = lib || {};
+        
         return {
             "debug": fakeLogger("debug", lib, libraryId),
             "info": fakeLogger("info", lib, libraryId),
@@ -31,7 +35,11 @@ if (LOCAL_OUTPUT_ONLY) {
         };
     };
 } else {
-    module.exports = function (lib, libraryId){ 
+    module.exports = function (lib, libraryId){
+        //@TODO sanity checks
+        libraryId = libraryId || 666;
+        lib = lib || {};
+        
         return {
             "debug": genuineLogger("debug", lib, libraryId),
             "info": genuineLogger("info", lib, libraryId),

@@ -29,10 +29,10 @@ $ npm install hologger
 ## TODO 
 
 La libreria deberia permitir indistintamente su invocacion de tres formas:
-+ hologger(3, {})            => la mas completa
-+ hologger("some message")   => para mensajes sobre la marcha
-+ hologger({})               => igualmente sobre la marcha, pero con info estructurada
-+ hologger(Error)            => logueo de errores  
++ `hologger(3, {foo: "bar"})`             => la mas completa
++ `hologger("some custom message")`       => para mensajes sobre la marcha
++ `hologger({foo: "bar"})`                => igualmente sobre la marcha, pero con info estructurada
++ `hologger(Error)`                       => logueo de errores  
 
 @vid https://github.com/tj/log.js/blob/master/Readme.md  
 @vid https://github.com/nomiddlename/log4js-node
