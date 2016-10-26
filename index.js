@@ -10,7 +10,7 @@
  * info;         // 2xxxxxxx
  * debug;        // 1xxxxxxx
  ***************************************************************************/
-var Logger          = requrie("./logger")
+var Logger          = require("lib/logger")
 ;
 
 
