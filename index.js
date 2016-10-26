@@ -10,35 +10,37 @@
  * info;         // 2xxxxxxx
  * debug;        // 1xxxxxxx
  ***************************************************************************/
-var Logentries      = require('le_node')
-,   chalk           = require('chalk')
-,   _               = require('lodash')
-,   handlebars      = require('handlebars')
-,   fakeClient      = require("./lib/fake")
-,   genuineClient   = require("./lib/genuine")
+var fakeLogger      = require("./lib/fake")
+,   genuineLogger   = require("./lib/genuine")
 ;
 
 
 
 const LOCAL_OUTPUT_ONLY = !process.env.LOGENTRIES_TOKEN;
-try {
-    const CONFIG = {};
-    CONFIG.token= process.env.LOGENTRIES_TOKEN;
-    CONFIG.console= true;
-    CONFIG.levels= ["debug", "info", "notice", "warning", "error", "critical", "alert", "emergency"];
-    CONFIG.minLevel= process.env.LOGENTRIES_LOG_LEVEL || 0;
-    CONFIG.bufferSize= 200;
-    CONFIG.secure= false;
-    CONFIG.flatten= false;
-    CONFIG.flattenArrays= false;
-    //replacer:
-    CONFIG.timestamp= true;
-    CONFIG.withLevel= true;
-    CONFIG.withStack= true;
-    const LOGENTRIES_CLIENT = new Logentries(CONFIG);
-    console.log("Yeah! Logentries instantation succeded!");
-    LOGENTRIES_CLIENT.on("error", (e) => LOGENTRIES_CLIENT.critical("[XXXXXXXX] [Unsuccessfully connect to Logentries", e));
-} catch (e) {
-    console.log("Ouch! Logentries instantation failed!");
+if (LOCAL_OUTPUT_ONLY) {
+    module.exports = function(lib, libraryId){ 
+        return {
+            "debug": fakeLogger("debug", lib, libraryId),
+            "info": fakeLogger("info", lib, libraryId),
+            "notice": fakeLogger("notice", lib, libraryId),
+            "warning": fakeLogger("warning", lib, libraryId),
+            "error": fakeLogger("error", lib, libraryId),
+            "critical": fakeLogger("critical", lib, libraryId),
+            "alert": fakeLogger("alert", lib, libraryId),
+            "emergency": fakeLogger("emergency", lib, libraryId),
+        };
+    };
+} else {
+    module.exports = function (lib, libraryId){ 
+        return {
+            "debug": genuineLogger("debug", lib, libraryId),
+            "info": genuineLogger("info", lib, libraryId),
+            "notice": genuineLogger("notice", lib, libraryId),
+            "warning": genuineLogger("warning", lib, libraryId),
+            "error": genuineLogger("error", lib, libraryId),
+            "critical": genuineLogger("critical", lib, libraryId),
+            "alert": genuineLogger("alert", lib, libraryId),
+            "emergency": genuineLogger("emergency", lib, libraryId),
+        };
+    };
 }
-module.exports = (LOCAL_OUTPUT_ONLY)? fakeClient : genuineClient;
