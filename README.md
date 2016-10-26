@@ -1,11 +1,15 @@
 # hologger
 Holistic logging library
 
+
+
 ## Installation
 
 ```bash
 $ npm install hologger
 ```
+
+
 
 ## Log Levels
 
@@ -20,6 +24,8 @@ $ npm install hologger
   - `2` `INFO`        a purely informational message
   - `1` `DEBUG`       debugging information
 
+
+
 ## TODO 
 
 La libreria deberia permitir indistintamente su invocacion de tres formas:
@@ -28,8 +34,10 @@ La libreria deberia permitir indistintamente su invocacion de tres formas:
 + hologger({})               => igualmente sobre la marcha, pero con info estructurada
 + hologger(Error)            => logueo de errores  
 
-@vid https://github.com/tj/log.js/blob/master/Readme.md
+@vid https://github.com/tj/log.js/blob/master/Readme.md  
 @vid https://github.com/nomiddlename/log4js-node
+
+
 
 ## License 
 
