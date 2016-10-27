@@ -8,7 +8,6 @@ var Logger          = require("./lib/logger")
 ;
 
 
-
 module.exports = function(library, isbn){
     //@TODO sanity checks
     isbn = isbn || 666;

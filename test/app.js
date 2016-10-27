@@ -1,6 +1,8 @@
-var hologger = require("../index")(require("./logger.json"))
+var hologger    = require("../index")(require("./logger.json"))
 ;
 
 
+
+//realizo los test
 hologger.debug(1, {member: "pekebuda"});
 hologger.info(1, "foo");
