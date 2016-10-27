@@ -1,6 +1,6 @@
-var hologger = require("../index")(require("./logger"))
+var hologger = require("../index")(require("./logger.json"))
 ;
 
 
-hologger.info(1, "Holaaaa");
-console.log("SUCCCESS");
+hologger.debug(1, {member: "pekebuda"});
+hologger.info(1, "foo");
