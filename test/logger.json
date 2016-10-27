@@ -1,0 +1,42 @@
+{
+    "debug": {
+        "1": "Set initial rights for member {{member}}",
+        "2": "Linkified member {{member}}"
+    },
+    "info": {
+        "1": "{{str}}",
+        "2": "Revoked AuthToken on member {{member}}",
+        "3": "Renewed AuthTokens on member {{member}}",
+        "4": "Granted Right to member {{member}}",
+        "5": "Added repo to member {{member}}",
+        "6": "Removed repo from member {{member}}",
+        "7": "Issued AuthToken for member {{member}}",
+        "8": "Issued RecoveryToken for member {{member}}"
+    },
+    "notice": {
+        "1": "Unsuccessfully grantRight to {{member}}"
+    },
+    "warning": {
+        
+    },
+    "error": {
+        "1": "Unsuccessfully setInitialRights for member {{member}} ",
+        "2": "Unsuccessfully issueAuthToken for member {{member}} ",
+        "3": "Unsuccessfully revokeAuthToken for member {{member}} ",
+        "4": "Unsuccessfully renewAuthTokens for member {{member}} ",
+        "5": "Unsuccessfully grantRight to {{member}} ",
+        "6": "Unsuccessfully addRepo to member {{member}} ",
+        "7": "Unsuccessfully removeRepo from member {{member}} ",
+        "8": "Unsuccessfully linkify member {{member}} ",
+        "9": "Unsuccessfully issueRecoveryToken for member {{member}} "
+    },
+    "critical": {
+        "1": "{{str}}"
+    },
+    "alert": {
+        "1": "{{str}}"
+    },
+    "emergency": {
+        "1": "{{str}}"
+    }
+}
