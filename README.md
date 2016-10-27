@@ -34,6 +34,17 @@ La libreria permite su invocacion de cuatro formas indistintamente:
 + `hologger({foo: "bar"})`                => igualmente sobre la marcha, pero con info estructurada
 + `hologger(Error)`                       => logueo de errores  
 
+En cualquier caso, se generara un codigo de error que, dependiendo del nivel 
+de logueo tendra la siguiente apariencia. 
++ emergency;    // 8xxxxxxx
++ alert;        // 7xxxxxxx
++ critical;     // 6xxxxxxx
++ error;        // 5xxxxxxx
++ warning;      // 4xxxxxxx
++ notice;       // 3xxxxxxx
++ info;         // 2xxxxxxx
++ debug;        // 1xxxxxxx
+
 
 
 ## TODO
