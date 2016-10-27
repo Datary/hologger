@@ -1,7 +1,7 @@
 /***************************************************************************
  * @description
  * 
- * @param {Object} lib: 
+ * @param {Object} library: 
  * @param {Number} isbn: identificador numerico de la libreria
  ***************************************************************************/
 var Logger          = require("./lib/logger")
@@ -9,14 +9,14 @@ var Logger          = require("./lib/logger")
 
 
 
-module.exports = function(lib, isbn){
+module.exports = function(library, isbn){
     //@TODO sanity checks
     isbn = isbn || 666;
-    lib = lib || {};
+    library = library || {};
     process.env = process.env || {};
     strategy = (process.env.LOGENTRIES_TOKEN)?
         "Logentries" : (process.env.APPLICATIONINSIGHTS_INSTRUMENTATIONKEY)?
             "ApplicationInsights": "Local";
     
-    return new Logger(strategy, lib, isbn);
+    return new Logger(strategy, library, isbn);
 };
