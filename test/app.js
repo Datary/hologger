@@ -26,3 +26,8 @@ hologger.error(2, {member: "error"});
 hologger.critical(2, {member: "critical"});
 hologger.alert(2, {member: "alert"});
 hologger.emergency(2, {member: "emergency"});
+
+
+
+//finalizacion
+console.log("===================END");
