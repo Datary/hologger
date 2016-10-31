@@ -1,5 +1,7 @@
 /***************************************************************************
  * @description
+ * Debido al analisis en cascada de las variables de entorno, la existencia 
+ * de una pretiere la otra. 
  * 
  * @param {Object} library: 
  * @param {Number} isbn: identificador numerico de la libreria
