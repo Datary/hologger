@@ -8,7 +8,6 @@ env(__dirname + '/.env');
 var hologger    = require("../index")(require("./logger.json"));
 
 
-
 //realizo los test
 hologger.debug(1, "foo");
 hologger.info(1, "foo");
