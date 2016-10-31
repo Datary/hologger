@@ -16,8 +16,8 @@ module.exports = function(library, isbn){
     library = library || {};
     process.env = process.env || {};
     strategy = (process.env.LOGENTRIES_TOKEN)?
-        "Logentries" : (process.env.APPLICATIONINSIGHTS_INSTRUMENTATIONKEY)?
-            "ApplicationInsights": "Local";
+        "Logentries" : (process.env.APPINSIGHTS_INSTRUMENTATIONKEY)?
+            "Appinsights": "Local";
     
     return new Logger(strategy, library, isbn);
 };
