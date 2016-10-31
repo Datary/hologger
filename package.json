@@ -15,7 +15,8 @@
     "chalk": "^1.1.3",
     "handlebars": "^4.0.5",
     "le_node": "^1.6.7",
-    "lodash": "^4.16.4"
+    "lodash": "^4.16.4",
+    "node-env-file": "^0.1.8"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
