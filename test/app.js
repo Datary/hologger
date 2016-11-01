@@ -8,6 +8,12 @@ env(__dirname + '/.env');
 var hologger    = require("../index")(require("./logger.json"));
 
 
+//finalizacion
+console.log("===================BEGIN TEST");
+console.log("Using " + hologger._strategy + " strategy");
+
+
+
 //realizo los test
 hologger.debug(1, "foo");
 hologger.info(1, "foo");
@@ -30,4 +36,4 @@ hologger.emergency(2, {member: "emergency"});
 
 
 //finalizacion
-console.log("===================END");
+console.log("===================END TEST");
