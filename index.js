@@ -12,7 +12,7 @@ var Logger          = require("./lib/logger")
 
 module.exports = function(library, isbn){
     //@TODO sanity checks
-    isbn = isbn || 666;
+    isbn = isbn || null;
     library = library || {};
     process.env = process.env || {};
     strategy = (process.env.LOGENTRIES_TOKEN)?
