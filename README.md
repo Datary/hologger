@@ -48,9 +48,6 @@ de logueo tendra la siguiente apariencia.
 
 
 ## TODO
-+ Implementar invocacion mediante Object.
-+ Implementar invocacion mediante Error.
-+ Implementar invocacion mediante String. 
 + Agregar metodo `useLibrary` para configurar la libreria de codigos a usar (breaking)
 
 @vid https://github.com/tj/log.js/blob/master/Readme.md  
