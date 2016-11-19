@@ -47,6 +47,16 @@ de logueo tendra la siguiente apariencia.
 
 
 
+## CAVEATS
+A fin de facilitar la operativa interna del logger, y de ser capaz de operar de 
+la forma mas abstracta posible en el mayor numero de casos posible, `hologger` 
+produce la estandarizacion interna del nombre de un numero de contado de propiedades
+de la informacion que se le presenta a logueo, siendo estas:
++ `error` => `err`  
++ `request` => `req`
+
+
+
 ## TODO
 + Agregar metodo `useLibrary` para configurar la libreria de codigos a usar (breaking)
 
