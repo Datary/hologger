@@ -4,20 +4,21 @@
  * de una pretiere la otra. 
  * 
  * @param {Object} library: 
- * @param {Number} isbn: identificador numerico de la libreria
+ * @param {Number} isil: identificador numerico de la libreria de codigos 
+ * empleada
  ***************************************************************************/
 var Logger          = require("./lib/logger")
 ;
 
 
-module.exports = function(library, isbn){
+module.exports = function(library, isil){
     //@TODO sanity checks
-    isbn = isbn || null;
+    isil = isil || null;
     library = library || {};
     process.env = process.env || {};
-    strategy = (process.env.LOGENTRIES_TOKEN)?
+    var strategy = (process.env.LOGENTRIES_TOKEN)?
         "Logentries" : (process.env.APPINSIGHTS_INSTRUMENTATIONKEY)?
             "Appinsights": "Local";
     
-    return new Logger(strategy, library, isbn);
+    return new Logger(strategy, library, isil);
 };
