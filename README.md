@@ -11,6 +11,22 @@ $ npm install hologger
 
 
 
+## Environmental variables
+
+```
+RACK_ENV=development
+HOSTNAME=datary.pekebuda.koding.io
+PORT=5000
+
+LOGENTRIES_TOKEN=
+LOGENTRIES_LOG_LEVEL=
+APPINSIGHTS_INSTRUMENTATIONKEY=
+APPINSIGHTS_LOG_LEVEL=
+```
+
+
+
+
 ## Log Levels
 
  Mirror that of syslog, but reversing ordering:
