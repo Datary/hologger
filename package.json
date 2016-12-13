@@ -1,6 +1,6 @@
 {
   "name": "hologger",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Holistic logging library for NodeJS",
   "main": "index.js",
   "author": "Fernando Diaz <peke_buda@hotmail.com>",
