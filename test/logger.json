@@ -1,34 +1,26 @@
 {
     "debug": {
-        "1": "{{str}}",
-        "2": "Set initial rights for member {{member}}"
+        "1": "foo says: {{foo}}"
     },
     "info": {
-        "1": "{{str}}",
-        "2": "Set initial rights for member {{member}}"
+        "1": "foo says: {{foo}}"
     },
     "notice": {
-        "1": "{{str}}",
-        "2": "Set initial rights for member {{member}}"
+        "1": "foo says: {{foo}}"
     },
     "warning": {
-        "1": "{{str}}",
-        "2": "Set initial rights for member {{member}}"
+        "1": "foo says: {{foo}}"
     },
     "error": {
-        "1": "{{str}}",
-        "2": "Set initial rights for member {{member}}"
+        "1": "foo says: {{foo}}"
     },
     "critical": {
-        "1": "{{str}}",
-        "2": "Set initial rights for member {{member}}"
+        "1": "foo says: {{foo}}"
     },
     "alert": {
-        "1": "{{str}}",
-        "2": "Set initial rights for member {{member}}"
+        "1": "foo says: {{foo}}"
     },
     "emergency": {
-        "1": "{{str}}",
-        "2": "Set initial rights for member {{member}}"
+        "1": "foo says: {{foo}}"
     }
 }

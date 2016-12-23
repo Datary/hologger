@@ -13,13 +13,17 @@ $ npm install hologger
 
 ## Environmental variables
 
-```
-RACK_ENV=development
-HOSTNAME=datary.pekebuda.koding.io
-PORT=5000
+```bash
+RACK_ENV=
+HOSTNAME=
+PORT=
+HOLOGGER_RIFS=
+HOLOGGER_RBFS=
 
+#when using Logentries Streamer
 LOGENTRIES_TOKEN=
 LOGENTRIES_LOG_LEVEL=
+#when using AppInsights Streamer
 APPINSIGHTS_INSTRUMENTATIONKEY=
 APPINSIGHTS_LOG_LEVEL=
 ```

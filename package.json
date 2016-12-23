@@ -27,5 +27,8 @@
   },
   "bugs": {
     "url": "https://github.com/datary/hologger"
+  },
+  "devDependencies": {
+    "node-env-file": "^0.1.8"
   }
 }
