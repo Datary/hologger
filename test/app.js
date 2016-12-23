@@ -22,7 +22,7 @@ hologger.warning("foo");
 hologger.error("foo");
 hologger.critical("foo");
 hologger.alert("foo");
-hologger.emergency("foo");
+hologger.emergency(	"foo");
 
 hologger.debug(1, {foo: "bar"});
 hologger.info(1, {foo: "bar"});
