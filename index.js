@@ -8,8 +8,7 @@
  * @param {Number} isil: identificador numerico de la libreria de codigos 
  * empleada
  */
-var Logger 	= require("./lib/logger")
-;
+var Logger 	= require("./lib/logger");
 
 
 module.exports = function(library, isil){
