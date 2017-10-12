@@ -12,6 +12,7 @@
   ],
   "dependencies": {
     "hologger-applicationinsights": "0.0.1",
+    "hologger-local": "0.0.1",
     "hologger-logentries": "0.0.1",
     "hologger-streamer": "0.0.1"
   },
