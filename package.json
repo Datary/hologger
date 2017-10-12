@@ -12,11 +12,9 @@
   ],
   "dependencies": {
     "applicationinsights": "^0.16.0",
-    "chalk": "^1.1.3",
-    "handlebars": "^4.0.5",
+    "hologger-streamer": "0.0.1",
     "le_node": "^1.6.7",
-    "lodash": "^4.16.4",
-    "node-env-file": "^0.1.8"
+    "lodash": "^4.16.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

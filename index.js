@@ -1,13 +1,14 @@
-/***************************************************************************
+/**
  * @description
  * Debido al analisis en cascada de las variables de entorno, la existencia 
  * de una pretiere la otra. 
+ *
  * 
  * @param {Object} library: 
  * @param {Number} isil: identificador numerico de la libreria de codigos 
  * empleada
- ***************************************************************************/
-var Logger          = require("./lib/logger")
+ */
+var Logger 	= require("./lib/logger")
 ;
 
 
