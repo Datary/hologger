@@ -19,7 +19,7 @@ module.exports = function(library, isil){
     process.env = process.env || {};
     var strategy = (process.env.LOGENTRIES_TOKEN)?
         "Logentries" : (process.env.APPINSIGHTS_INSTRUMENTATIONKEY)?
-            "Appinsights": "Local";
+            "ApplicationInsights": "Local";
     
     return new Logger(strategy, library, isil);
 };
