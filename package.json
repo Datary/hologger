@@ -12,6 +12,7 @@
   ],
   "dependencies": {
     "applicationinsights": "^0.16.0",
+    "hologger-logentries": "0.0.1",
     "hologger-streamer": "0.0.1",
     "le_node": "^1.6.7",
     "lodash": "^4.16.4"
