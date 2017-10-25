@@ -11,7 +11,7 @@
     "logger"
   ],
   "dependencies": {
-    "hologger-applicationinsights": "0.0.1",
+    "hologger-applicationinsights": "0.0.2",
     "hologger-local": "0.0.2",
     "hologger-logentries": "0.0.2",
     "hologger-streamer": "0.0.1"
