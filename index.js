@@ -1,7 +1,7 @@
 /**
  * Module dependencies.
  */
-var Hologger = require("./lib/logger");
+var Logger = require("./lib/logger");
 
 
 /**
@@ -9,14 +9,14 @@ var Hologger = require("./lib/logger");
  *
  * @api public
  */
-exports = module.exports = new Hologger();
+exports = module.exports = new Logger();
 
 
 /**
  * Expose constructors.
  */
 exports.Hologger =
-exports.Logger = Hologger;
+exports.Logger = Logger;
 
 
 /**
