@@ -11,7 +11,8 @@
     "logger"
   ],
   "dependencies": {
-    "hologger-streamer": "0.0.1"
+    "hologger-streamer": "0.0.1",
+    "lodash.clonedeep": "^4.5.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
